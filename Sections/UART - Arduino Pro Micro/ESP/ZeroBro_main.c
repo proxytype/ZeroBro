@@ -30,7 +30,6 @@ void app_main(void)
         .source_clk = UART_SCLK_APB,
     };
 
-    // We won't use a buffer for sending data.
     uart_driver_install(UART, RX_BUF_SIZE * 2, 0, 0, NULL, 0);
     uart_param_config(UART, &uart_config);
     uart_set_pin(UART, TXD_PIN, RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
