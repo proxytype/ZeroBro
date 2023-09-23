@@ -41,3 +41,33 @@ Here's a breakdown of what the code does:
    - Delay the task for 500 milliseconds using `vTaskDelay`.
 
 This code effectively configures UART communication between the ESP32 and Arduino Pro Micro and continuously sends data packets over the UART connection. The data sent includes an incrementing packet number for demonstration purposes.
+
+## Arduino
+This code is an Arduino sketch that allows you to emulate a keyboard using an Arduino board. It listens for specific commands received over a serial connection (Serial1) and translates them into keyboard keypresses and releases. Here's an explanation of the code:
+
+1. **Library Inclusion**: The code includes the "Keyboard.h" library, which is essential for emulating keyboard behavior.
+
+2. **Command Definitions**: A set of strings is defined, each representing a special key or command that can be recognized when received over the serial connection. These commands include `[SHIFT]`, `[CTRL]`, `[ENTER]`, `[DEL]`, `[TAB]`, and `[ALT]`.
+
+3. **Modifier Key State Variables**: Three boolean variables (`isShift`, `isCtrl`, `isAlt`) are declared to keep track of the state of modifier keys (Shift, Ctrl, Alt).
+
+4. **Setup Function**: In the `setup` function:
+   - Serial communication is initiated with two interfaces: `Serial1` for receiving commands from an external device and `Serial` for debugging and communication with the computer.
+   - The emulated keyboard is initialized using `Keyboard.begin()`.
+
+5. **Loop Function**: In the `loop` function:
+   - A `while` loop continuously checks for incoming data on the `Serial1` interface.
+   - When data is available, it is read as a string (`a`).
+   - The received command is printed to the serial monitor for debugging purposes.
+
+6. **Command Processing**: The code processes the received command as follows:
+   - If the command is `[SHIFT]`, it toggles the state of the Shift key using `isShift` and simulates a press of the right Shift key using `Keyboard.press(KEY_RIGHT_SHIFT)`.
+   - If the command is `[CTRL]`, it toggles the state of the Ctrl key using `isCtrl` and simulates a press of the left Ctrl key using `Keyboard.press(KEY_LEFT_CTRL)`.
+   - If the command is `[ENTER]`, it toggles the state of the Alt key using `isAlt` and simulates a press of the Enter key on the keypad using `Keyboard.press(KEY_KP_ENTER)`.
+   - If the command is `[ALT]`, it simulates a press of the left Alt key using `Keyboard.press(KEY_LEFT_ALT)`.
+   - If the command is `[DEL]`, it simulates a press of the Delete key using `Keyboard.press(KEY_DELETE)`.
+   - If the command is `[TAB]`, it simulates a press of the Tab key using `Keyboard.press(KEY_TAB)`.
+
+7. **Character Typing**: If the received command is none of the recognized special commands, the code checks whether the Shift key is active (`isShift`). If it is, the character is converted to uppercase using `a.toUpperCase()`. Then, the code emulates typing the character using `Keyboard.print(a)`.
+
+This code essentially allows you to control a virtual keyboard through a serial interface by sending specific commands representing keyboard keys, making it useful for tasks such as automating keystrokes or remotely controlling a computer using an Arduino board.
