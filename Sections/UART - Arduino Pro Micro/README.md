@@ -43,7 +43,7 @@ Here's a breakdown of what the code does:
 This code effectively configures UART communication between the ESP32 and Arduino Pro Micro and continuously sends data packets over the UART connection. The data sent includes an incrementing packet number for demonstration purposes.
 
 ## Arduino
-This code is an Arduino sketch that allows you to emulate a keyboard using an Arduino board. It listens for specific commands received over a serial connection (Serial1) and translates them into keyboard keypresses and releases. Here's an explanation of the code:
+This code is an Arduino sketch that allows you to emulate a keyboard using an Arduino Pro Micro board. It listens for specific commands received over a serial connection (Serial1) and translates them into keyboard keypresses and releases. Here's an explanation of the code:
 
 1. **Library Inclusion**: The code includes the "Keyboard.h" library, which is essential for emulating keyboard behavior.
 
