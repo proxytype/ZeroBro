@@ -2,7 +2,7 @@
 
 This code demonstrates the seamless communication between an ESP32 device and an Arduino Pro Micro using UART. The Arduino Pro Micro is particularly advantageous in this setup as it can emulate HID devices such as keyboards and mice, enabling keystroke injection similar to the functionality offered by the Rubberduck
 
-https://raw.githubusercontent.com/proxytype/ZeroBro/main/Sections/UART%20-%20Arduino%20Pro%20Micro/badusb.jpg
+![ESP and Arduino Pro Micro](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Sections/UART%20-%20Arduino%20Pro%20Micro/badusb.jpg)
 
 ## ESP
 This code demonstrate how to set up UART communication between the ESP32 and an Arduino Pro Micro. The purpose of this code is to send data from the ESP32 to the Arduino Pro Micro over a UART (serial) connection.
