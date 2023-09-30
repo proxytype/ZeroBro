@@ -1,6 +1,6 @@
 # RFID Reader
 
-![ESP and Arduino Pro Micro](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Sections/SPI%20-%20RFID%20reader/rudenetwork-card-mask-zerobro.png)
+![ESP and Arduino Pro Micro](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Sections/SPI%20-%20RFID%20reader/rudenetwork-card-mask-zerobro1.png)
 
 This code is a C program designed for use with ESP32 microcontrollers and the ESP-IDF (Espressif IoT Development Framework) SDK. It interacts with an RC522 RFID (Radio-Frequency Identification) module to scan RFID tags. Below is an explanation of the code:
 
