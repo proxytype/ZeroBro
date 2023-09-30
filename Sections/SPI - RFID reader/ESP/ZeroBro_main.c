@@ -1,26 +1,9 @@
-// #include <stdio.h>
-// #include "sdkconfig.h"
-// #include "freertos/FreeRTOS.h"
-// #include "freertos/task.h"
-// #include "esp_system.h"
-// #include "esp_spi_flash.h"
-// #include "driver/uart.h"
-// #include "driver/gpio.h"
-// #include <string.h>
-
 #include <esp_log.h>
 #include <inttypes.h>
 #include "rc522.h"
 
 static const char* TAG = "rc522-demo";
 static rc522_handle_t scanner;
-
-#define TXD_PIN (1)
-#define RXD_PIN (0)
-
-#define UART UART_NUM_0
-
-int num = 0;
 
 static void rc522_handler(void* arg, esp_event_base_t base, int32_t event_id, void* event_data)
 {
