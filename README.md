@@ -6,12 +6,12 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 
 ## Hardware
 
-* CPU
- -- NodeMCU ESP32
- -- Arduino Pro Micro
+* CPU *
+  * NodeMCU ESP32
+  * Arduino Pro Micro
 
-* Peripherals
- -- RFID Reader - RC522
+* Peripherals *
+   * RFID Reader - RC522
 
 
 ESP IDF FRAMEWORK: 4.1.4
