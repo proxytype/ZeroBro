@@ -1,5 +1,7 @@
 # RFID Reader
 
+![ESP and Arduino Pro Micro](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Sections/UART%20-%20Arduino%20Pro%20Micro/badusb.jpg)
+
 This code is a C program designed for use with ESP32 microcontrollers and the ESP-IDF (Espressif IoT Development Framework) SDK. It interacts with an RC522 RFID (Radio-Frequency Identification) module to scan RFID tags. Below is an explanation of the code:
 
 1. **Header File Inclusions**:
