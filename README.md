@@ -1,7 +1,7 @@
 # ZeroBro
 ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a similar functionality and design while catering to budget-conscious enthusiasts.
 
-* UART - ESP comunication With Arduino Pro Micro (BadUSB). [>>>](https://github.com/proxytype/ZeroBro/tree/main/Sections/SPI%20-%20RFID%20reader)
+* UART - ESP comunication With Arduino Pro Micro (BadUSB). [>>>](https://github.com/proxytype/ZeroBro/tree/main/Sections/UART%20-%20Arduino%20Pro%20Micro)
 * SPI - ESP communication With RFID Reader. [>>>](https://github.com/proxytype/ZeroBro/tree/main/Sections/UART%20-%20Arduino%20Pro%20Micro)
 
 ## Hardware
