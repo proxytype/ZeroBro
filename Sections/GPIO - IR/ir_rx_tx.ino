@@ -16,8 +16,8 @@ void setup()
 
 void dump() {
 
-Serial.println(); // blank line between entries
-Serial.println(); // 2 blank lines between entries
+Serial.println();
+Serial.println();
 irrecv.printIRResultShort(&Serial);
 // Check if the buffer overflowed
 if (irrecv.decodedIRData.flags & IRDATA_FLAGS_WAS_OVERFLOW) {
