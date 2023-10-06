@@ -1,7 +1,3 @@
-Of course! Here's a more concise and cleaner explanation of the provided code for GitHub without code blocks:
-
----
-
 ## IR Signal Capture and Replay with Arduino
 
 **Overview:**
