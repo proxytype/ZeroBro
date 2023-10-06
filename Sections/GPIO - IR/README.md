@@ -4,6 +4,8 @@ This Arduino code enables you to capture, analyze, and replay infrared (IR) sign
 
 ![IR Signal Capture](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Sections/GPIO%20-%20IR/ir_rx_tx.png)
 
+![IR Preview](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Sections/GPIO%20-%20IR/ir_tx_preview.jpg)
+
 ### Features
 
 - **IR Signal Capture**: Captures incoming IR signals.
