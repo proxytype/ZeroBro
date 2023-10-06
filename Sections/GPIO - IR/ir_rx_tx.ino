@@ -35,23 +35,23 @@ if (irrecv.decodedIRData.flags & IRDATA_FLAGS_WAS_OVERFLOW) {
   Serial.println();
   Serial.println(F("Raw result in internal ticks (50 us) - with leading gap"));
   
-  irrecv.printIRResultRawFormatted(&Serial, false); // Output the results in RAW format
+  irrecv.printIRResultRawFormatted(&Serial, false);
             
   Serial.println(F("Raw result in microseconds - with leading gap"));
             
-  irrecv.printIRResultRawFormatted(&Serial, true);  // Output the results in RAW format
+  irrecv.printIRResultRawFormatted(&Serial, true); 
         
-  Serial.println();                               // blank line between entries
+  Serial.println();                              
   Serial.print(F("Result as internal 8bit ticks (50 us) array - compensated with MARK_EXCESS_MICROS="));
   Serial.println(MARK_EXCESS_MICROS);
             
-  irrecv.compensateAndPrintIRResultAsCArray(&Serial, false); // Output the results as uint8_t source code array of ticks
+  irrecv.compensateAndPrintIRResultAsCArray(&Serial, false);
             
   Serial.print(F("Result as microseconds array - compensated with MARK_EXCESS_MICROS="));
   Serial.println(MARK_EXCESS_MICROS);
             
-  irrecv.compensateAndPrintIRResultAsCArray(&Serial, true); // Output the results as uint16_t source code array of micros           
-  irrecv.printIRResultAsCVariables(&Serial);  // Output address and data as source code variables            
+  irrecv.compensateAndPrintIRResultAsCArray(&Serial, true); 
+  irrecv.printIRResultAsCVariables(&Serial);   
   irrecv.compensateAndPrintIRResultAsPronto(&Serial);
         
  }
