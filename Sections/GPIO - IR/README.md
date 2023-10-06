@@ -11,7 +11,7 @@ This Arduino code enables you to capture, analyze, and replay infrared (IR) sign
 
 ### Code Explanation
 
-1. **Library Inclusion**: The code begins by including the IRremote library, which provides essential functions and classes for working with IR signals.
+1. **Library Inclusion**: The code begins by including the [IRremote](https://github.com/Arduino-IRremote/Arduino-IRremote) library, which provides essential functions and classes for working with IR signals. 
 
 2. **Pin Definitions**: Constants are defined for the pins used for the IR receiver and IR transmitter. You can easily customize these pins to match your hardware setup.
 
