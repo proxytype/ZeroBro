@@ -13,5 +13,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 * Peripherals
    * RFID Reader - RC522. [>>>](https://www.aliexpress.com/item/1005004659043670.html)
 
-
+## Environments
 ESP IDF FRAMEWORK: 4.1.4
+Arduino IDE
+
