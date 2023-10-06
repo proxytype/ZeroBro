@@ -53,6 +53,7 @@ void loop()
 {
   if (irrecv.decode())
   {
+    //38Khz
     irsend.sendRaw(irrecv.decodedIRData.rawDataPtr->rawbuf, irrecv.decodedIRData.rawDataPtr->rawlen , 38); 
     dump();
     irrecv.resume(); 
