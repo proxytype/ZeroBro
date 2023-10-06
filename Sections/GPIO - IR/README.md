@@ -38,5 +38,3 @@ The code defines a constant `RAW_BUFFER_LENGTH` with a value of 750, specifying 
 ### Conclusion
 
 This code offers a clean and comprehensive solution for working with IR signals using an Arduino. It captures and replays IR signals while providing detailed insights for debugging and analysis, making it valuable for projects involving IR communication or remote control emulation.
-
----
