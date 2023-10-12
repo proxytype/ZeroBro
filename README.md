@@ -31,4 +31,5 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 - [ ] Create Navigation Control
 - [ ] USB HID INTERFACE
 - [ ] CC1101 RF INTERFACE
+- [ ] 18650 Battey Bay
 ```
