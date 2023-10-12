@@ -26,7 +26,9 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 * Arduino IDE
 
 ```[tasklist]
-### My tasks
-- [ ] https://github.com/octo-org/octo-repo/issues/45
-- [ ] Draft task
+### TASK LIST
+- [ ] Connect to TFT/OLED
+- [ ] Create Navigation Control
+- [ ] USB HID INTERFACE
+- [ ] CC1101 RF INTERFACE
 ```
