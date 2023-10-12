@@ -25,3 +25,8 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 ### Arduino Pro Micro
 * Arduino IDE
 
+```[tasklist]
+### My tasks
+- [ ] https://github.com/octo-org/octo-repo/issues/45
+- [ ] Draft task
+```
