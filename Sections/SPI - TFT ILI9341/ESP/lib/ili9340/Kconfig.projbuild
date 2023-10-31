@@ -1,0 +1,271 @@
+menu "TFT Configuration"
+
+	config GPIO_RANGE_MAX
+		int
+		default 39 if IDF_TARGET_ESP32
+		default 46 if IDF_TARGET_ESP32S2
+		default 48 if IDF_TARGET_ESP32S3
+		default 18 if IDF_TARGET_ESP32C2
+		default 19 if IDF_TARGET_ESP32C3
+		default 30 if IDF_TARGET_ESP32C6
+
+	choice DRIVER
+		prompt "Display Driver"
+		default ILI9341
+		help
+			Select Display Driver.
+		config ILI9225
+			bool "ILI9225"
+			help
+				Display Driver is ILI9225.
+		config ILI9225G
+			bool "ILI9225G"
+			help
+				Display Driver is ILI9225G.
+		config ILI9340
+			bool "ILI9340"
+			help
+				Display Driver is ILI9340.
+		config ILI9341
+			bool "ILI9341"
+			help
+				Display Driver is ILI9341.
+		config ST7735
+			bool "ST7735"
+			help
+				Display Driver is ST7735.
+		config ST7796
+			bool "ST7796"
+			help
+				Display Driver is ST7796S.
+	endchoice
+
+	config WIDTH
+		int "SCREEN WIDTH"
+		range 0 999
+		default 320
+		help
+			The width resolution of the screen.
+
+	config HEIGHT
+		int "SCREEN HEIGHT"
+		range 0 999
+		default 240
+		help
+			The height resolution of the screen.
+
+	config OFFSETX
+		int "GRAM X OFFSET"
+		range 0 99
+		default 0
+		help
+			When your TFT have offset(X), set it.
+
+	config OFFSETY
+		int "GRAM Y OFFSET"
+		range 0 99
+		default 0
+		help
+			When your TFT have offset(Y), set it.
+
+	config MOSI_GPIO
+		int "MOSI GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 23 if IDF_TARGET_ESP32
+		default 35 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  0 # C3 and others
+		help
+			GPIO number (IOxx) to SPI MOSI.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to MOSI.
+			On the ESP32, GPIOs 35-39 are input-only so cannot be used as outputs.
+			On the ESP32-S2, GPIO 46 is input-only so cannot be used as outputs.
+
+	config SCLK_GPIO
+		int "SCLK GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 18 if IDF_TARGET_ESP32
+		default 36 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  1 # C3 and others
+		help
+			GPIO number (IOxx) to SPI SCLK.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to SCLK.
+			On the ESP32, GPIOs 35-39 are input-only so cannot be used as outputs.
+			On the ESP32-S2, GPIO 46 is input-only so cannot be used as outputs.
+
+	config TFT_CS_GPIO
+		int "CS GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 14 if IDF_TARGET_ESP32
+		default 34 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  2 # C3 and others
+		help
+			GPIO number (IOxx) to TFT CS.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to CS.
+			On the ESP32, GPIOs 35-39 are input-only so cannot be used as outputs.
+			On the ESP32-S2, GPIO 46 is input-only so cannot be used as outputs.
+
+	config DC_GPIO
+		int "DC GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 27 if IDF_TARGET_ESP32
+		default 40 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  3 # C3 and others
+		help
+			GPIO number (IOxx) to SPI DC.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to DC.
+			On the ESP32, GPIOs 35-39 are input-only so cannot be used as outputs.
+			On the ESP32-S2, GPIO 46 is input-only so cannot be used as outputs.
+
+	config RESET_GPIO
+		int "RESET GPIO number"
+		range -1 GPIO_RANGE_MAX
+		default 33 if IDF_TARGET_ESP32
+		default 41 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  4 # C3 and others
+		help
+			GPIO number (IOxx) to RESET.
+			When it is -1, the RESET isn't performed.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to RESET.
+			On the ESP32, GPIOs 35-39 are input-only so cannot be used as outputs.
+			On the ESP32-S2, GPIO 46 is input-only so cannot be used as outputs.
+
+	config BL_GPIO
+		int "BACKLIGHT GPIO number"
+		range -1 GPIO_RANGE_MAX
+		default 32 if IDF_TARGET_ESP32
+		default 33 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  5 # C3 and others
+		help
+			GPIO number (IOxx) to BACKLIGHT.
+			When it is -1, BACKLIGHT isn't performed.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to BACKLIGHT.
+			On the ESP32, GPIOs 35-39 are input-only so cannot be used as outputs.
+			On the ESP32-S2, GPIO 46 is input-only so cannot be used as outputs.
+
+	config INVERSION
+		bool "Enable Display Inversion"
+		default false
+		help
+			Enable Display Inversion.
+
+	config RGB_COLOR
+		bool "Change BGR filter to RGB filter"
+		default false
+		help
+			Change BGR color filter to RGB color filter.
+
+	choice XPT2046
+		prompt "XPT2046 Touch Contoller"
+		default XPT2046_DISABLE
+		help
+			Select XPT2046 Touch Contoller.
+		config XPT2046_DISABLE
+			bool "Disable Touch Contoller"
+		config XPT2046_ENABLE_SAME_BUS
+			bool "Enable Touch Contoller using the same SPI bus as TFT"
+			help
+				Enable Touch Contoller using the same SPI bus as TFT.
+		config XPT2046_ENABLE_DIFF_BUS
+			bool "Enable Touch Contoller using a different SPI bus than TFT"
+			help
+				Enable Touch Contoller using a different SPI bus than TFT.
+	endchoice
+
+	choice SPI_HOST
+		depends on XPT2046_DISABLE || XPT2046_ENABLE_SAME
+		prompt "SPI peripheral that controls this bus"
+		default SPI2_HOST
+		help
+			Select SPI peripheral that controls this bus.
+		config SPI2_HOST
+			bool "SPI2_HOST"
+			help
+				Use SPI2_HOST. This is also called HSPI_HOST.
+		config SPI3_HOST
+			depends on IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+			bool "SPI3_HOST"
+			help
+				USE SPI3_HOST. This is also called VSPI_HOST
+	endchoice
+
+
+	config XPT_MISO_GPIO
+		depends on XPT2046_ENABLE_SAME_BUS || XPT2046_ENABLE_DIFF_BUS
+		int "XPT2046 MISO GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 19 if IDF_TARGET_ESP32
+		default 37 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  6 # C3 and others
+		help
+			GPIO number (IOxx) to XPT2046 MISO.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to MISO.
+
+	config XPT_CS_GPIO
+		depends on XPT2046_ENABLE_SAME_BUS || XPT2046_ENABLE_DIFF_BUS
+		int "XPT2046 CS GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 21 if IDF_TARGET_ESP32
+		default 38 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  7 # C3 and others
+		help
+			GPIO number (IOxx) to XPT2046 CS.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to CS.
+
+	config XPT_IRQ_GPIO
+		depends on XPT2046_ENABLE_SAME_BUS || XPT2046_ENABLE_DIFF_BUS
+		int "XPT2046 IRQ GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 22 if IDF_TARGET_ESP32
+		default 39 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  8 # C3 and others
+		help
+			GPIO number (IOxx) to XPT2046 IRQ.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to IRQ.
+
+	config XPT_SCLK_GPIO
+		depends on XPT2046_ENABLE_DIFF_BUS
+		int "XPT2046 SCLK GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 25 if IDF_TARGET_ESP32
+		default 40 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default  9 # C3 and others
+		help
+			GPIO number (IOxx) to XPT2046 CLK.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to IRQ.
+
+	config XPT_MOSI_GPIO
+		depends on XPT2046_ENABLE_DIFF_BUS
+		int "XPT2046 MOSI GPIO number"
+		range 0 GPIO_RANGE_MAX
+		default 26 if IDF_TARGET_ESP32
+		default 41 if IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+		default 10 # C3 and others
+		help
+			GPIO number (IOxx) to XPT2046 CLK.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to IRQ.
+
+	config XPT_ACCURACY
+		depends on XPT2046_ENABLE_SAME_BUS || XPT2046_ENABLE_DIFF_BUS
+		int "Touch position accuracy"
+		range 2 10
+		default 5
+		help
+			Tolerance of touch position.
+			If the difference from the previous position is within this range, it is considered valid.
+			The higher the value, the less accurate the position, but the less responsive it is.
+
+	config SAVE_CALIBRATION
+		depends on XPT2046_ENABLE_SAME_BUS || XPT2046_ENABLE_DIFF_BUS
+		bool "Save calibration data to NVS"
+		default false
+		help
+			Save calibration data to NVS.
+
+	config XPT_CHECK
+		depends on XPT2046_ENABLE_SAME_BUS || XPT2046_ENABLE_DIFF_BUS
+		bool "Enable XPT2046 Touch Check"
+		default false
+		help
+			Enable XPT2046 Touch Check.
+
+endmenu
