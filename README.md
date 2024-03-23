@@ -9,7 +9,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 * SPI - ESP communication With TFT ILI9341. [>>>](https://github.com/proxytype/ZeroBro/tree/main/Sections/SPI%20-%20TFT%20ILI9341)
 
 
-## TFT Example:
+## TFT Screen:
 [![ESP32-TFT-ILI9341](https://img.youtube.com/vi/Ap0bh388Uds/0.jpg)](https://www.youtube.com/embed/Ap0bh388Uds)
 
 ## Hardware
