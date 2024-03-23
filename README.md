@@ -10,7 +10,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 
 
 ## TFT Example:
-[![ESP32-TFT-ILI9341](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/embed/Ap0bh388Uds)
+[![ESP32-TFT-ILI9341](https://img.youtube.com/vi/Ap0bh388Uds/0.jpg)](https://www.youtube.com/embed/Ap0bh388Uds)
 
 ## Hardware
 
