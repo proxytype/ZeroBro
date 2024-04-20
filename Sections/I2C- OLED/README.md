@@ -1,5 +1,7 @@
 # ESP32 OLED Display with LVGL
 
+![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Sections/I2C-%20OLED/ESP-OLED.PNG)
+
 This code demonstrates how to interface an ESP32 with an OLED display using the LVGL (Light and Versatile Graphics Library) library. LVGL is a powerful graphics library for creating embedded GUIs.
 
 ### Libraries Used
