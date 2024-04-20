@@ -53,4 +53,4 @@ This code demonstrates how to interface an ESP32 with an OLED display using the 
 - LVGL UI functionality can be extended or modified within the provided `example_lvgl_demo_ui()` function.
 
 ## ESP IDF
-Version: v5.0.1
+Version: 5.0.1
