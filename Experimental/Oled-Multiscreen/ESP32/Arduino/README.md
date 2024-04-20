@@ -1,3 +1,4 @@
+[img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Experimental/Oled-Multiscreen/ESP32/Arduino/PCA9548A.PNG)
 # OLED Display Multiplexing with ESP32
 
 This Arduino sketch demonstrates how to use the TCA9548A I2C multiplexer to control multiple OLED displays with an ESP32 board.
