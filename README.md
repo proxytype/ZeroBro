@@ -35,7 +35,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 
 ```[tasklist]
 ### TASK LIST
-- [ ] Connect to TFT/OLED
+- [x] Connect to TFT/OLED
 - [ ] Create Navigation Control
 - [ ] USB HID INTERFACE
 - [ ] CC1101 RF INTERFACE
