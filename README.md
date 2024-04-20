@@ -7,6 +7,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 * SPI - ESP communication With RFID Reader. [>>>](https://github.com/proxytype/ZeroBro/tree/main/Sections/SPI%20-%20RFID%20reader)
 * GPIO - IR Receiver And Transmitter With Arduino Pro Micro. [>>>](https://github.com/proxytype/ZeroBro/tree/main/Sections/GPIO%20-%20IR)
 * SPI - ESP communication With TFT ILI9341. [>>>](https://github.com/proxytype/ZeroBro/tree/main/Sections/SPI%20-%20TFT%20ILI9341)
+* I2C - ESP communication With OLed 1306.[>>>](https://github.com/proxytype/ZeroBro/tree/main/Sections/I2C-%20OLED)
 
 
 ## TFT Screen:
@@ -22,6 +23,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
    * RFID Reader - RC522. [>>>](https://www.aliexpress.com/item/1005004659043670.html)
    * IR Transmitter / Receiver - 38Khz. [>>>](https://www.aliexpress.com/item/4001237995692.html)
    * TFT - ILI9341. [>>>](https://www.aliexpress.com/item/1005004928951786.html)
+   * Oled - SSD1306. [>>>](https://www.aliexpress.com/item/33036863902.html)
 
 ## Environments
 ### ESP
