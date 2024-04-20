@@ -1,9 +1,9 @@
-# OLED Display Multiplexing with Arduino
+# OLED Display Multiplexing with ESP32
 
-This Arduino sketch demonstrates how to use the TCA9548A I2C multiplexer to control multiple OLED displays with a single Arduino board.
+This Arduino sketch demonstrates how to use the TCA9548A I2C multiplexer to control multiple OLED displays with an ESP32 board.
 
 ### Libraries Used
-- `Wire.h`: Arduino's I2C communication library.
+- `Wire.h`: ESP32's/Arduino's I2C communication library.
 - `Adafruit_GFX.h`: Graphics library for drawing shapes, text, etc.
 - `Adafruit_SSD1306.h`: Library for controlling SSD1306-based OLED displays.
 
@@ -31,8 +31,12 @@ This Arduino sketch demonstrates how to use the TCA9548A I2C multiplexer to cont
 - The `loop()` function is empty as there are no continuous tasks to perform.
 
 ### Additional Notes
-- The TCA9548A multiplexer is used to switch between different I2C buses connected to the OLED displays. This allows controlling multiple displays with a single Arduino.
+- The TCA9548A multiplexer is used to switch between different I2C buses connected to the OLED displays. This allows controlling multiple displays with a single ESP32 board.
 - Each OLED display is initialized separately, and text is written to each display individually.
 
-
+```[tasklist]
+### TASK LIST
+- [ ] Translate To clean ESP-IDF
+```
+### References
 https://randomnerdtutorials.com/tca9548a-i2c-multiplexer-esp32-esp8266-arduino/
