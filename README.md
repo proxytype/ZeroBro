@@ -13,6 +13,9 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 ## TFT Screen:
 [![ESP32-TFT-ILI9341](https://img.youtube.com/vi/Ap0bh388Uds/0.jpg)](https://www.youtube.com/embed/Ap0bh388Uds)
 
+## Oled Screen:
+![img](https://github.com/proxytype/ZeroBro/blob/f361cc0d8af86de086bf9072c415d846689d1ee1/esp32-oled.jpg)
+
 ## Hardware
 
 * CPU
