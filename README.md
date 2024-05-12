@@ -32,6 +32,9 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
    * TFT - ILI9341. [>>>](https://www.aliexpress.com/item/1005004928951786.html)
    * Oled - SSD1306. [>>>](https://www.aliexpress.com/item/33036863902.html)
 
+Starting to design a modular system where each layer consists of a set of components:
+
+
 ## Environments
 ### ESP
    * ESP IDF FRAMEWORK: 4.1.4
