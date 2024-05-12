@@ -33,7 +33,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
    * Oled - SSD1306. [>>>](https://www.aliexpress.com/item/33036863902.html)
 
 Starting to design a modular system where each layer consists of a set of components:
-![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/pcb-structure.png)
+![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/pcb-structure2.png)
 
 ## Environments
 ### ESP
