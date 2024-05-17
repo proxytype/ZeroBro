@@ -35,6 +35,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 * Power Supply
     * 18650 Battery bay (3v/5v + protection). [>>>](https://www.aliexpress.com/item/1005004006109248.html)
     * 18650 Batteries with protection. [>>>](https://www.aliexpress.com/item/1005003411216513.html)
+ 
   ![Power](https://raw.githubusercontent.com/proxytype/ZeroBro/main/power1.jpg)
 
 Starting to design a modular system where each layer consists of a set of components:
