@@ -56,6 +56,6 @@ Starting to design a modular system where each layer consists of a set of compon
 - [ ] Create Navigation Control
 - [ ] USB HID INTERFACE
 - [ ] CC1101 RF INTERFACE
-- [ ] 18650 Battery Bay
+- [x] 18650 Battery Bay
 - [ ] SD Card INTERFACE
 ```
