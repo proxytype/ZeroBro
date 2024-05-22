@@ -53,7 +53,7 @@ Starting to design a modular system where each layer consists of a set of compon
 ```[tasklist]
 ### TASK LIST
 - [x] Connect to TFT/OLED
-- [ ] Create Navigation Control
+- [ ] Navigation Control
 - [ ] USB HID INTERFACE
 - [ ] CC1101 RF INTERFACE
 - [x] 18650 Battery Bay
