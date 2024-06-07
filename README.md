@@ -41,6 +41,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 Starting to design a modular system where each layer consists of a set of components:
 
 * ESP32 Layer
+
 ![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/esp-base.png)
 
 ## Environments
