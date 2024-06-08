@@ -46,7 +46,7 @@ Starting to design a modular system where each layer consists of a set of compon
 
 * Arduino Layer
 
-![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/arduino-base.png)
+![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/arduino-base1.png)
 
 ## Environments
 ### ESP
