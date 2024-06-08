@@ -44,6 +44,10 @@ Starting to design a modular system where each layer consists of a set of compon
 
 ![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/esp-base.png)
 
+* Arduino Layer
+
+![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/arduino-base.png)
+
 ## Environments
 ### ESP
    * ESP IDF FRAMEWORK: 4.1.4
