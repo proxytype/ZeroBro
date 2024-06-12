@@ -5,6 +5,8 @@ So, we decided to design one ourselves and share it with you for free!
 <br /><br />
 ![t-shape](https://raw.githubusercontent.com/proxytype/ZeroBro/main/3D/Nylon-T-Spacer/t-stand-f.PNG)
 <br />
+![t-shape](https://raw.githubusercontent.com/proxytype/ZeroBro/main/3D/Nylon-T-Spacer/t-printed.PNG)
+<br />
 You can download the files in the following formats:
 - STL
 - [AutoCAD 123D file](https://github.com/proxytype/ZeroBro/raw/main/3D/Nylon-T-Spacer/stand-1-alone.123dx)
