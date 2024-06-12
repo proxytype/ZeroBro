@@ -1,4 +1,4 @@
-# ZeroBro Project: Nylon T Shape Spacer
+# ABS T Shape Spacer (M3)
 
 We tried to find a nylon T shape spacer for the ZeroBro project but couldn't find something suitable on the web. <br />
 So, we decided to design one ourselves and share it with you for free!
