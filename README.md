@@ -31,6 +31,8 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
    * IR Transmitter / Receiver - 38Khz. [>>>](https://www.aliexpress.com/item/4001237995692.html)
    * TFT - ILI9341. [>>>](https://www.aliexpress.com/item/1005004928951786.html)
    * Oled - SSD1306. [>>>](https://www.aliexpress.com/item/33036863902.html)
+   * GPS - GY-NEO6MV2. [>>>](https://www.aliexpress.com/item/1005001635722164.html)
+   * GSM - SIM800L. [>>>](https://www.aliexpress.com/item/1005005547754754.html)
  
 * Power Supply
     * 18650 Battery bay (3v/5v + protection). [>>>](https://www.aliexpress.com/item/1005004006109248.html)
