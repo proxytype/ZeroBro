@@ -35,6 +35,7 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
    * Oled - SSD1306. [>>>](https://www.aliexpress.com/item/33036863902.html)
    * GPS - GY-NEO6MV2. [>>>](https://www.aliexpress.com/item/1005001635722164.html)
    * GSM - SIM800L. [>>>](https://www.aliexpress.com/item/1005005547754754.html)
+   * LAN - LAN8720. [>>>](https://www.aliexpress.com/item/1005003252531799.html)
  
 * Power Supply
     * 18650 Battery bay (3v/5v + protection). [>>>](https://www.aliexpress.com/item/1005004006109248.html)
