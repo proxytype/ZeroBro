@@ -18,9 +18,12 @@ ZeroBro is a cost-effective DIY alternative to the Flipper Zero, providing a sim
 
 ![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/large-oled.png)
 
-* Multi Oled Screens using TCA9548A with I2C (Arduino Sketch). [>>>](https://github.com/proxytype/ZeroBro/tree/main/Experimental/Oled-Multiscreen/ESP32/Arduino)
-  
-
+## Experimental
+Multi Oled Screens using TCA9548A with I2C (Arduino Sketch). [>>>](https://github.com/proxytype/ZeroBro/tree/main/Experimental/Oled-Multiscreen/ESP32/Arduino)
+![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Experimental/Oled-Multiscreen/ESP32/Arduino/oled.jpg)
+<br />
+ESP32 LAN8720 Ethernet
+![img](https://raw.githubusercontent.com/proxytype/ZeroBro/main/Experimental/lan8720/lan8720.jpg)
 
 ## Hardware
 
